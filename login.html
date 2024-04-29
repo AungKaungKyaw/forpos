@@ -1,0 +1,60 @@
+<!--*fontawesome icon shadow
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/all.css">
+
+  <style>
+    body{
+      background: linear-gradient(158deg, rgba(255,255,255,1) 0%, rgba(0,164,197,1) 48%, rgba(0,116,140,1) 100%);
+    }
+    .shadowed-element {
+      filter: drop-shadow(3px 3px 2px rgba(0,0,0,0.25));
+      /*-webkit-box-shadow: 6px 6px 2px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: 6px 6px 2px 0px rgba(0,0,0,0.75);*/
+    }
+  </style>
+  <!--    colors
+          #00a4c5
+          #00748c-->
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col d-flex justify-content-center align-items-center" style="height: 100vh">
+      <form class="p-3" style="padding-top: 0;">
+        <div class="form-group">
+          <div style="text-align: center;" class="p-2 mb-2 "><i class="fa-regular fa-circle-user fa-5x shadowed-element" style="color:#ffffff;"></i></div>
+          <label class="pb-3 h3 shadowed-element">Login</label>
+          <input type="text" class="form-control shadowed-element" id="username" placeholder="Enter email">
+          <span class="mx" id="usernameSpan"></span>
+          <input type="password" class="form-control shadowed-element" id="password" placeholder="Enter password">
+          <span class="mx" id="passwordSpan"></span>
+          <div>
+            <button  id="loginSubmit" type="submit" class="btn btn-light mt-3 shadowed-element">Login</button>
+          </div>
+          <div class="form-text mt-2"><a href="#" class="text-decoration-none " style="color: black">Need help?</a></div>
+        </div>
+      </form>
+    </div>
+
+
+    <div class="col-lg-4">
+      <h2 id="responses">Text here somethign else</h2>
+      <button type="button" class="btn btn-light myclass shadowed-element">Click me</button>
+    </div>
+  </div>
+</div>
+<script src="js/bootstrap.js"></script>
+<!--<script src="js/all.js"></script>-->
+<!--<script src="js/login.js"></script>-->
+<script src="js/login.js"></script>
+
+
+
+</body>
+</html>

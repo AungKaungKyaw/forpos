@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        .imgStyle{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="d-flex justify-content-center align-items-center">
+        <div style="width: 100%;" class="">
+            <div class="row">
+                <div class="col-lg-12 mt-5 px-5 bg-primary">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <h1 class="display-1">Receipt</h1>
+                            <p class="mt-5">CompanyName</p>
+                            <p>Address</p>
+                            <p>phonenumber</p>
+                            <p>Shop</p>
+                            <p>Staff</p>
+                        </div>
+                        <div style="text-align: center" class="">
+                            <img class="imgStyle" src="img/universe-high-resolution-logo.png" alt="">
+                            <p class="mt-5">PaymetnData</p>
+                            <p>2023/12/13</p>
+                            <hr>
+                            <p>ReceiptNo</p>
+                            <p>123213</p>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 mt-3 px-5">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>ItemCode</th>
+                            <th>ItemName</th>
+                            <th>Qty</th>
+                            <th>Price</th>
+                        </tr>
+                        </thead>
+                        <tbody class="tableRow">
+
+                        </tbody>
+                    </table>
+                    <div style="float: right;" class="d-flex">
+                        <p class="me-5 p-3">Total</p>
+                        <p id="total" class="me-5 p-3">123</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="js/saleInvoice.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

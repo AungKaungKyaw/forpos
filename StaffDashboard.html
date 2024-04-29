@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>web testing</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.css">
+    <style>
+        *{
+
+        }
+        body{
+            background: linear-gradient(158deg, rgba(255,255,255,1) 0%, rgba(0,164,197,1) 48%, rgba(0,116,140,1) 100%);
+            background-repeat: repeat-x;
+            min-height: 100vh;
+        }
+        .nav-item{
+            transition: 0.1s ease-out;
+        }
+        .nav-item:hover{
+            background-color: rgba(255,255,255,0.2);
+        }
+        .noti{
+            top: 0;
+            right: 0;
+            background-color: #FF4C4C;
+            font-size: 12px;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sidebar{
+            box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.2);
+        }
+
+        .sidebar2{
+            margin: 10px 0px;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .active{
+            background: rgb(153,0,255);
+            background: linear-gradient(90deg, rgba(153,0,255,1) 0%, rgba(222,165,255,1) 72%);
+
+        }
+        .sidebar2:hover{
+            /*background: rgba(255,255,255,0.2);*/
+            background: rgb(122,6,195);
+            background: linear-gradient(90deg, rgba(122,6,195,1) 0%, rgba(202,108,255,1) 100%);
+        }
+        .sidebar2 a{
+            text-decoration: none;
+            color: black;
+        }
+        .sidebar2:hover a{
+            color: rgba(255,255,255,0.75);
+        }
+        .pointerCursor{
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-between">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">
+                                <i class="fa-solid fa-language fa-xl" style="color: white"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">
+                                <i class="fa-solid fa-sun fa-xl" style="color: white"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link position-relative" href="#" tabindex="-1" aria-disabled="true">
+                                <p class="position-absolute noti" >2</p>
+                                <i class="fa-solid fa-user fa-xl" style="color: white"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a id="user" class="nav-link position-relative" href="#" tabindex="-1" aria-disabled="true">
+
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid mt-4">
+    <div class="row gx-5">
+        <div class="col-lg-2 sidebar">
+            <ul class="w-100 list-group">
+                <li class="list-group-item"><a class="text-decoration-none" href="#">Dashboard</a></li>
+                <li class="list-group-item"><a class="text-decoration-none" href="#">Login</a></li>
+                <li class="list-group-item"><a class="text-decoration-none" href="#">Register</a></li>
+                <li class="list-group-item"><a class="text-decoration-none" href="#">Dashboard</a></li>
+                <li class="list-group-item"><a class="text-decoration-none" href="#">Dashboard</a></li>
+            </ul>
+        </div>
+
+        <div class="col-lg-10">
+            <div class="input-group mb-3 w-25">
+                <input type="number" class="form-control" placeholder="Item Code" aria-label="Username" aria-describedby="basic-addon1" id="inputItemCode">
+                <input type="number" class="form-control" placeholder="Qty" aria-label="Username" aria-describedby="basic-addon1" id="itemQty">
+            </div>
+            <div id="itemCodeSpan" style="width: 100%; height: 30px;"></div>
+            <div style="min-height: 70vh;" class="bg-info">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">NO</th>
+                        <th scope="col">ItemCode</th>
+                        <th scope="col">ItemName</th>
+                        <th scope="col">qty</th>
+                        <th scope="col">price</th>
+                        <th scope="col">total</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tableBody">
+
+                    </tbody>
+                </table>
+            </div>
+            <div style="float: right;">
+                <button id="something">submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/StaffDashboard.js"></script>
+<script src="js/all.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
