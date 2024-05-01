@@ -51,7 +51,7 @@ input2.addEventListener('keyup', function(e){
 
 function reqData(itemCode, callback){
     const xhr = new XMLHttpRequest();
-    const url = 'http://localhost/project1/project2/control/reqdata.php';
+    const url = 'http://localhost/project2/control/reqdata.php';
     xhr.open('POST',url);
     xhr.onreadystatechange = function (){
         if (xhr.readyState === XMLHttpRequest.DONE) {
@@ -259,7 +259,7 @@ submit.addEventListener('click',() =>{
     console.log(jsonData);
     if(jsonData.length > 0){
         localStorage.setItem('jsonData', JSON.stringify(jsonData));
-        window.location.href = "http://localhost/project1/project2/saleInvoice.html";
+        window.location.href = "http://localhost/project2/saleInvoice.html";
     }
 })
 

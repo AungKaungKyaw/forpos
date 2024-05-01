@@ -25,7 +25,7 @@ submit.addEventListener('click',function(e){
             let res1 = JSON.parse(res);
             if(res1.status == 'success'){
                 localStorage.setItem('username',username.value);
-                window.location.href = "http://localhost/project1/project2/StaffDashboard.html";
+                window.location.href = "http://localhost/project2/StaffDashboard.html";
             }
         });
     }
@@ -33,7 +33,7 @@ submit.addEventListener('click',function(e){
 });
 function req(data,callback){
     const xhr = new XMLHttpRequest();
-    xhr.open('POST', 'http://localhost/project1/project2/control/reqdata.php', true);
+    xhr.open('POST', 'http://localhost/project2/control/reqdata.php', true);
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
