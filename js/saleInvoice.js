@@ -18,4 +18,9 @@ jsonData.forEach(function(rows){
 })
 const total = document.getElementById('total');
 total.innerText = totalNumber;
+const print = document.getElementById('print');
+print.addEventListener('click',function(){
+    localStorage.setItem('jsonData',null);
+    window.location.href = "http://localhost/project2/StaffDashboard.html";
+})
 

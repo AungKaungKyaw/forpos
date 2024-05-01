@@ -72,6 +72,11 @@ function reqData(itemCode, callback){
     xhr.send(jsonData);
 }
 function displayData(data){
+        console.log("check data  ");
+        console.log(data);
+        if(data === 'noValidItemCode'){
+            return 0;
+        }
         let listItems = document.querySelectorAll('.tableRow');
         console.log("argument1///////////////////////////");
         console.log(arguments[1]);
